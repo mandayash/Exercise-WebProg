@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoestuary</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Tailwind Style -->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css">
+</head>
+<body class="text-primary2">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-30 top-0">
+        <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-primary1 font-secondary">
+                <a href="#">Shoestuary</a>
+            </div>
+            <!-- Nav -->
+            <div class="hidden lg:flex space-x-8 font-primary">
+                <a href="#home" class="text-gray-700 hover:text-primary1">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-primary1">About</a>
+                <a href="#shopping" class="text-gray-700 hover:text-primary1">Shopping</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary1">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="w-full bg-white overflow-hidden">
+        <!-- Hero Section -->
+        <section class="w-full bg-[url('../public/aset/bg2.png')] bg-cover bg-center bg-no-repeat">
+            <div class="container mx-auto px-4 py-20 min-h-screen flex items-center">
+                <!-- Left Content -->
+                <div class="w-full md:w-1/2 text-left">
+                    <div class="text-primary1 font-primary">
+                        BEST SHOES AROUND THE WORLD
+                    </div>
+    
+                    <h1 class="text-5xl md:text-6xl font-secondary text-primary2 leading-tight mb-8">
+                        Comfort,
+                        <span class="relative">
+                            enjoy
+                            <div class="absolute bottom-2 left-0 w-full">
+                                <div class="h-2 bg-primary1 opacity-50"></div>
+                            </div>
+                        </span>
+                        <br />
+                        and live with
+                        <br />
+                        style life
+                    </h1>
+    
+                    <p class="text-gray-600 mb-12 max-w-xl font-primary">
+                        Built with comfort in mind, our shoes are designed to provide
+                        the perfect balance of style and functionality. Experience
+                        the difference with Shoestuary.
+                    </p>
+    
+                    <div class="flex gap-6 items-center">
+                        <button class="bg-primary1 text-white px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+                            Shop Now
+                        </button>
+                        
+                        <button class="flex items-center gap-2 text-gray-700">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary1 rounded-full text-white">
+                                <i class="ri-play-fill"></i>
+                            </div>
+                            <span>Watch Video</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-12 md:mt-0 relative">
+                    <div class="absolute top-0 right-0 w-3/4 h-3/4 bg-orange-50 rounded-full -z-10"></div>
+                    <img src="../public/aset/logo.png" alt="Featured Shoe" class="w-full object-cover" border-radius: 0.125rem; />
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+</body>
+</html>
