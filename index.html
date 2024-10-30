@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Saff n Co</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="row">
+        <div class="col-md-12">
+          <form id="employee-form" action="index.html" method="post">
+            <h1> Saff n Co </h1>
+            
+            <fieldset>
+              <legend><span class="number">1</span> Personal Details </legend>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="user_name" required>
+            
+              <label for="email">Email:</label>
+              <input type="email" id="mail" name="user_email" required>
+           
+              <label for="password">Account Password:</label>
+              <input type="password" id="password" name="user_password" required>
+              
+            </fieldset>
+            <fieldset>  
+              <legend><span class="number">2</span> Job Details </legend>
+              
+             <label for="bio">Department:</label>
+              <input type="text" id="role" name="position" required>
+            
+             <label for="job">Job Role:</label>
+              <select id="job" name="user_job" required>
+                <optgroup label="Technology">
+                  <option value="frontend_developer">Front-End Developer</option>
+                  <option value="php_developer">PHP Developer</option>
+                  <option value="python_developer">Python Developer</option>
+                  <option value="web_designer">Web Designer</option>
+                  <option value="wordpress_developer">Wordpress Developer</option>
+                </optgroup>
+              </select>
+              
+             </fieldset>
+           
+            <button type="submit">Submit</button>
+            <p id="Submit Fail, Please check your input."></p> 
+           </form>
+        </div>
+      </div>
+      <script src="script.js"></script>      
+    </body>
 </html>
