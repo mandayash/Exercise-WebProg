@@ -9,8 +9,8 @@ use App\Http\Controllers\AuthorController;
 
 use App\Http\Controllers\UserController;
 
-Route::get('/login', [UserController::class, 'showLoginForm']);
-Route::post('/login', [UserController::class, 'login']);
+Route::get('/signin', [UserController::class, 'showLoginForm'])->name('signin');
+Route::post('/signin', [UserController::class, 'signin']);
 Route::post('/signup', [UserController::class, 'signup']);
 
 

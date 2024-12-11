@@ -9,7 +9,7 @@ class UserController extends Controller
     public function showLoginForm()
     {
         // Tampilkan halaman login
-        return view('login');
+        return view('signin');
     }
 
     public function login(Request $request)
